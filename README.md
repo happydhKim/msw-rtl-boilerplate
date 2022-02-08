@@ -1,2 +1,24 @@
-# msw-rtl-boilerplate
-msw testing-library boilerplate
+# msw testing-library/react boilerplate
+
+## install
+
+```
+
+yarn install
+
+```
+
+## browser msw
+```
+
+yarn start
+
+```
+
+
+## node msw (testing-library)
+```
+
+yarn test
+
+```
