@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { serviceWorker } from './server/browser';
+serviceWorker.start({ onUnhandledRequest: 'bypass' });
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
