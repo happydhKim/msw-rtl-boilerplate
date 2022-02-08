@@ -1,2 +1,3 @@
-# msw-rtl-boilerplate
-msw testing-library boilerplate
+# msw testing-library/react boilerplate
+
+
