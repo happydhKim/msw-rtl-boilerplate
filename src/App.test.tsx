@@ -8,7 +8,7 @@ test('renders learn react link', () => {
 });
 
 test('renders user name', async () => {
-  const { findByText } = render(<App />);
-  const linkElement = await findByText(/김도현/i);
+  render(<App />);
+  const linkElement = await screen.findByText(/김도현/i);
   expect(await linkElement).toBeInTheDocument();
 });
