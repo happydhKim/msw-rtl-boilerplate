@@ -1,6 +1,4 @@
 import useSWR from 'swr';
-import logo from './logo.svg';
-import './App.css';
 
 import type { FC } from 'react';
 
@@ -18,23 +16,7 @@ const App: FC = () => {
   const { data: user } = useSWR<User>('/api/user', fetcher);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <div className="App">
-        {user && `${user.name}님은 ${user.age} 살입니다.`}
-      </div>
+      {user && `${user.name}님은 ${user.age} 살입니다.`}
     </div>
   );
 };
